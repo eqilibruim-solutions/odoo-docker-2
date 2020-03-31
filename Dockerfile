@@ -39,7 +39,8 @@ RUN set -x; \
 ADD requirements.txt /opt/requirements.txt
 RUN python3 -m pip install --upgrade pip \
   && pip3 install -r /opt/requirements.txt
-
+  && pip3 install pandas
+  
 # Install LESS
 RUN set -x; \
   apt-get install -y --no-install-recommends \
@@ -75,7 +76,7 @@ RUN chmod +x /odooboot
 # Get Odoo code
 WORKDIR /opt
 RUN set -x; \
-  git clone --depth 1 https://github.com/odoo/odoo.git -b 13.0 \
+  git clone --depth 1 https://github.com/eqilibruim501/odoo.git -b 13.0 \
   && rm -rf odoo/.git
 
 # Change directory owner
