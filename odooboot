@@ -9,7 +9,7 @@
 # Default-Start:        2 3 4 5
 # Default-Stop:         0 1 6
 # Short-Description:    Enterprise Resource Management software
-# Description:          Odoo is a complete ERP and CRM software.
+# Description:          CloudBI is a complete ERP and CRM software.
 ### END INIT INFO
 
 DAEMON=/opt/odoo/odoo-bin
